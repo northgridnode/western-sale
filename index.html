@@ -9,179 +9,183 @@
     body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#0f0f0f;color:#fff;min-height:100vh}
 
     .hero{
-      background:linear-gradient(135deg,#1a2a1a 0%,#0d1f0d 50%,#1a1a2a 100%);
-      padding:40px 20px 32px;
-      text-align:center;
-      position:relative;
-      overflow:hidden;
+      background:linear-gradient(135deg,#1a1a2a 0%,#0d0d1f 50%,#1a2a1a 100%);
+      padding:40px 20px 32px;text-align:center;position:relative;overflow:hidden;
     }
     .hero::before{
       content:'';position:absolute;inset:0;
-      background:radial-gradient(ellipse at 50% 0%,rgba(80,180,80,0.15) 0%,transparent 70%);
+      background:radial-gradient(ellipse at 50% 0%,rgba(100,120,255,0.12) 0%,transparent 70%);
     }
     .badge{
-      display:inline-block;background:rgba(80,200,80,0.15);border:1px solid rgba(80,200,80,0.4);
-      color:#7dde7d;font-size:0.7rem;font-weight:700;letter-spacing:0.12em;
+      display:inline-block;background:rgba(100,120,255,0.15);border:1px solid rgba(100,120,255,0.35);
+      color:#8899ff;font-size:0.7rem;font-weight:700;letter-spacing:0.12em;
       text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:14px;
     }
-    .hero h1{font-size:1.8rem;font-weight:800;line-height:1.15;margin-bottom:6px}
-    .hero h1 span{color:#7dde7d}
-    .hero p{font-size:0.9rem;opacity:0.6;margin-bottom:0}
+    .hero h1{font-size:1.9rem;font-weight:800;line-height:1.15;margin-bottom:6px}
+    .hero h1 span{color:#8899ff}
+    .hero p{font-size:0.9rem;opacity:0.55}
 
     .stats{
-      display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
-      background:#222;border-top:1px solid #222;border-bottom:1px solid #222;
+      display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+      background:#1e1e1e;border-top:1px solid #1e1e1e;border-bottom:1px solid #1e1e1e;
     }
-    .stat{background:#161616;padding:18px 10px;text-align:center}
-    .stat-val{font-size:1.4rem;font-weight:800;color:#fff;line-height:1}
-    .stat-val.green{color:#7dde7d}
-    .stat-label{font-size:0.65rem;text-transform:uppercase;letter-spacing:0.08em;color:#666;margin-top:4px}
+    .stat{background:#111;padding:16px 8px;text-align:center}
+    .stat-val{font-size:1.3rem;font-weight:800;color:#fff;line-height:1}
+    .stat-label{font-size:0.6rem;text-transform:uppercase;letter-spacing:0.08em;color:#555;margin-top:4px}
 
-    .section{padding:24px 16px;border-bottom:1px solid #1e1e1e}
+    .section{padding:22px 16px;border-bottom:1px solid #1a1a1a}
     .section-title{
       font-size:0.65rem;font-weight:700;text-transform:uppercase;
-      letter-spacing:0.12em;color:#7dde7d;margin-bottom:16px;
+      letter-spacing:0.12em;color:#8899ff;margin-bottom:16px;
     }
 
     .highlights{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-    .highlight{
-      background:#161616;border:1px solid #252525;border-radius:10px;
-      padding:14px 12px;
-    }
-    .highlight-icon{font-size:1.3rem;margin-bottom:6px}
+    .highlight{background:#161616;border:1px solid #252525;border-radius:10px;padding:14px 12px}
+    .highlight-icon{font-size:1.2rem;margin-bottom:5px}
     .highlight-title{font-size:0.8rem;font-weight:700;margin-bottom:2px}
-    .highlight-desc{font-size:0.72rem;color:#888;line-height:1.4}
+    .highlight-desc{font-size:0.72rem;color:#777;line-height:1.4}
 
-    .revenue-card{
-      background:linear-gradient(135deg,#0d1a0d,#0d1520);
-      border:1px solid #2a3a2a;border-radius:12px;padding:20px;
+    .value-card{
+      background:linear-gradient(135deg,#0d0d1a,#101a10);
+      border:1px solid #252535;border-radius:12px;padding:20px;
     }
-    .revenue-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid #1e2e1e}
-    .revenue-row:last-child{border-bottom:none;padding-bottom:0}
-    .revenue-label{font-size:0.8rem;color:#888}
-    .revenue-val{font-size:0.95rem;font-weight:700;color:#7dde7d}
-    .revenue-note{font-size:0.7rem;color:#555;margin-top:12px;line-height:1.5}
+    .value-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid #1a1a2a}
+    .value-row:last-child{border-bottom:none;padding-bottom:0}
+    .value-label{font-size:0.8rem;color:#777}
+    .value-val{font-size:0.95rem;font-weight:700;color:#fff}
+    .value-val.accent{color:#8899ff}
+    .value-val.green{color:#7dde7d}
 
     .tags{display:flex;flex-wrap:wrap;gap:8px}
-    .tag{
-      background:#1a1a1a;border:1px solid #2a2a2a;
-      border-radius:20px;padding:6px 14px;
-      font-size:0.75rem;color:#aaa;
-    }
+    .tag{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:20px;padding:6px 14px;font-size:0.75rem;color:#999}
 
     .location-list{list-style:none}
     .location-list li{
       display:flex;align-items:center;gap:10px;
-      padding:9px 0;border-bottom:1px solid #1a1a1a;
-      font-size:0.85rem;color:#bbb;
+      padding:9px 0;border-bottom:1px solid #1a1a1a;font-size:0.85rem;color:#bbb;
     }
     .location-list li:last-child{border-bottom:none}
-    .location-list .dist{margin-left:auto;font-size:0.75rem;color:#666;white-space:nowrap}
+    .dist{margin-left:auto;font-size:0.75rem;color:#555;white-space:nowrap}
 
-    .cta-section{padding:28px 16px 40px;text-align:center}
-    .cta-section p{font-size:0.85rem;color:#666;margin-bottom:6px}
-    .cta-section .name{font-size:1.1rem;font-weight:700;color:#fff}
-    .cta-section .contact{font-size:0.9rem;color:#7dde7d;margin-top:4px}
+    .cta-section{padding:28px 16px 44px;text-align:center}
+    .cta-section p{font-size:0.8rem;color:#555;margin-bottom:8px}
+    .cta-name{font-size:1.1rem;font-weight:700}
+    .cta-contact{font-size:1rem;color:#8899ff;margin-top:6px}
+    .cta-contact a{color:#8899ff;text-decoration:none}
   </style>
 </head>
 <body>
 
 <div class="hero">
-  <div class="badge">Investment Property — Cash Sale</div>
+  <div class="badge">For Sale — Cash Offers</div>
   <h1>1205 S <span>Western</span> Ave</h1>
-  <p>Sioux Falls, SD 57105 &nbsp;·&nbsp; Furnished &amp; Turnkey</p>
+  <p>Sioux Falls, SD 57105</p>
 </div>
 
 <div class="stats">
   <div class="stat">
     <div class="stat-val">4</div>
-    <div class="stat-label">Bedrooms</div>
+    <div class="stat-label">Bed</div>
   </div>
   <div class="stat">
     <div class="stat-val">2</div>
-    <div class="stat-label">Bathrooms</div>
+    <div class="stat-label">Bath</div>
   </div>
   <div class="stat">
-    <div class="stat-val green">$40K+</div>
-    <div class="stat-label">STR Gross/Yr</div>
+    <div class="stat-val">1,634</div>
+    <div class="stat-label">Sq Ft</div>
+  </div>
+  <div class="stat">
+    <div class="stat-val">1947</div>
+    <div class="stat-label">Built</div>
   </div>
 </div>
 
+<!-- RECENT WORK -->
 <div class="section">
-  <div class="section-title">Property Highlights</div>
+  <div class="section-title">Recent Upgrades — Work Already Done</div>
   <div class="highlights">
     <div class="highlight">
       <div class="highlight-icon">❄️</div>
       <div class="highlight-title">New AC — 2025</div>
-      <div class="highlight-desc">Brand new unit installed, no HVAC concerns</div>
+      <div class="highlight-desc">Brand new unit, no HVAC concerns for a buyer</div>
     </div>
     <div class="highlight">
       <div class="highlight-icon">🔨</div>
       <div class="highlight-title">Remodeled — 2024</div>
-      <div class="highlight-desc">Full interior refresh, move-in ready</div>
+      <div class="highlight-desc">Full interior refresh already completed</div>
     </div>
     <div class="highlight">
-      <div class="highlight-icon">🛋️</div>
-      <div class="highlight-title">Fully Furnished</div>
-      <div class="highlight-desc">Turnkey — furniture, linens, kitchen included</div>
+      <div class="highlight-icon">🏗️</div>
+      <div class="highlight-title">Basement Addition</div>
+      <div class="highlight-desc">12×22 finished room added — extra sq footage baked in</div>
     </div>
     <div class="highlight">
       <div class="highlight-icon">🌿</div>
       <div class="highlight-title">Fenced Yard</div>
-      <div class="highlight-desc">Private outdoor space, great for families or pets</div>
+      <div class="highlight-desc">Private outdoor space, 7,170 sq ft lot</div>
     </div>
     <div class="highlight">
-      <div class="highlight-icon">🏆</div>
-      <div class="highlight-title">Guest Favorite</div>
-      <div class="highlight-desc">Established STR with 5-star reviews on Airbnb</div>
+      <div class="highlight-icon">🚗</div>
+      <div class="highlight-title">1-Car Garage</div>
+      <div class="highlight-desc">Attached parking, added storage</div>
     </div>
     <div class="highlight">
-      <div class="highlight-icon">🏠</div>
-      <div class="highlight-title">1,634 sq ft</div>
-      <div class="highlight-desc">Main level + finished basement addition</div>
+      <div class="highlight-icon">📍</div>
+      <div class="highlight-title">Central Location</div>
+      <div class="highlight-desc">High-demand SF neighborhood, easy rental or resale</div>
     </div>
   </div>
 </div>
 
+<!-- VALUE -->
 <div class="section">
-  <div class="section-title">Short-Term Rental Revenue</div>
-  <div class="revenue-card">
-    <div class="revenue-row">
-      <span class="revenue-label">Current annual gross (active STR)</span>
-      <span class="revenue-val">~$30,000</span>
+  <div class="section-title">Value at a Glance</div>
+  <div class="value-card">
+    <div class="value-row">
+      <span class="value-label">Redfin Estimate</span>
+      <span class="value-val accent">$249,000</span>
     </div>
-    <div class="revenue-row">
-      <span class="revenue-label">Projected — strong occupancy year</span>
-      <span class="revenue-val">$40,000+</span>
+    <div class="value-row">
+      <span class="value-label">Estimated Sale Range</span>
+      <span class="value-val">$237K – $287K</span>
     </div>
-    <div class="revenue-row">
-      <span class="revenue-label">Platform</span>
-      <span class="revenue-val">Airbnb</span>
+    <div class="value-row">
+      <span class="value-label">Last sold (Mar 2023)</span>
+      <span class="value-val">$216,000</span>
     </div>
-    <div class="revenue-row">
-      <span class="revenue-label">Nightly rate (peak)</span>
-      <span class="revenue-val">up to $675</span>
+    <div class="value-row">
+      <span class="value-label">2023 Property Tax</span>
+      <span class="value-val">$2,419 / yr</span>
     </div>
-    <p class="revenue-note">Property is actively listed and generating income. Comes with established Airbnb listing, photos, reviews, and guest history — ready to operate day one.</p>
+    <div class="value-row">
+      <span class="value-label">Lot Size</span>
+      <span class="value-val">7,170 sq ft</span>
+    </div>
+    <div class="value-row">
+      <span class="value-label">Sale type</span>
+      <span class="value-val green">Cash — no agent</span>
+    </div>
   </div>
 </div>
 
+<!-- SPECS -->
 <div class="section">
-  <div class="section-title">Amenities</div>
+  <div class="section-title">Property Details</div>
   <div class="tags">
-    <span class="tag">4 Queen Bedrooms</span>
+    <span class="tag">4 Bedrooms</span>
     <span class="tag">2 Full Baths</span>
-    <span class="tag">Full Kitchen</span>
-    <span class="tag">Fast Wi-Fi</span>
-    <span class="tag">Smart TVs</span>
-    <span class="tag">Washer/Dryer</span>
+    <span class="tag">1,634 sq ft</span>
+    <span class="tag">Finished Basement</span>
+    <span class="tag">1-Car Garage</span>
     <span class="tag">Fenced Yard</span>
-    <span class="tag">1 Car Garage</span>
-    <span class="tag">Dedicated Workspace</span>
-    <span class="tag">Sleeps 12</span>
+    <span class="tag">Single Family</span>
+    <span class="tag">Built 1947</span>
+    <span class="tag">7,170 sq ft Lot</span>
   </div>
 </div>
 
+<!-- LOCATION -->
 <div class="section">
   <div class="section-title">Location</div>
   <ul class="location-list">
@@ -197,9 +201,9 @@
 </div>
 
 <div class="cta-section">
-  <p>For sale by owner — cash offers considered</p>
-  <div class="name">Matthew Hummel</div>
-  <div class="contact">605-366-3358</div>
+  <p>Direct sale · no agent · cash offers considered</p>
+  <div class="cta-name">Matthew Hummel</div>
+  <div class="cta-contact"><a href="tel:+16053663358">605-366-3358</a></div>
 </div>
 
 </body>
